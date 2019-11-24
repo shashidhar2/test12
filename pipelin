@@ -1,0 +1,17 @@
+agent {
+        label {
+            label ""
+            customWorkspace "D://angular8"
+        }
+    }
+environment {
+dotnet = 'C://Program Files/dotnet/dotnet.exe'
+}
+stages{
+stage('ang') {
+steps {
+bat 'cd angultest'
+}
+}
+stage('npm') {
+steps {
